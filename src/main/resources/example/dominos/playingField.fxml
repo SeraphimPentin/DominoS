@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="num" prefHeight="608.0" prefWidth="849.0" style="-fx-background-color: fafafa;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.dominos.PlayingFieldController">
+   <children>
+      <Label layoutX="388.0" layoutY="22.0" prefHeight="50.0" prefWidth="352.0" style="-fx-background-color: #2E3348; -fx-text-fill: fafafa; -fx-background-radius: 7;" text="  Максисальная длинна из костяшек:">
+         <font>
+            <Font name="Microsoft Sans Serif" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="number1" layoutX="13.0" layoutY="88.0" prefHeight="50.0" prefWidth="310.0" style="-fx-background-color: #2E3348; -fx-text-fill: fafafa; -fx-background-radius: 7;" text="    Выберите еще             домино ">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="-109.20001220703125" endY="618.2000122070312" layoutX="443.0" layoutY="65.0" startX="-109.20001220703125" startY="-45.20000457763672" strokeWidth="4.0" />
+      <Button fx:id="restart" layoutX="184.0" layoutY="22.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="138.0" style="-fx-background-color: #2E3348; -fx-text-fill: fafafa; -fx-background-radius: 7;" text="Рестарт">
+         <font>
+            <Font name="Serif Regular" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="comeBack" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: #2E3348; -fx-text-fill: fafafa; -fx-background-radius: 7;" text="Меню" textAlignment="CENTER">
+         <font>
+            <Font name="Serif Regular" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="count" layoutX="699.0" layoutY="22.0" prefHeight="49.0" prefWidth="42.0" style="-fx-background-color: #2E3348; -fx-text-fill: fafafa; -fx-background-radius: 7;">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="zeroSix" fitHeight="49.0" fitWidth="53.0" layoutY="442.0" onMouseClicked="#click06" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/0_6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zeroOne" fitHeight="49.0" fitWidth="53.0" layoutY="201.0" onMouseClicked="#click01" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/0_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zeroTwo" fitHeight="49.0" fitWidth="53.0" layoutY="250.0" onMouseClicked="#click02" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/0_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zeroThree" fitHeight="49.0" fitWidth="53.0" layoutY="299.0" onMouseClicked="#click03" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/0_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="one" fitHeight="49.0" fitWidth="53.0" layoutX="49.0" layoutY="201.0" onMouseClicked="#click11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/1_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zeroFive" fitHeight="49.0" fitWidth="53.0" layoutY="393.0" onMouseClicked="#click05" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/0_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zeroFour" fitHeight="49.0" fitWidth="53.0" layoutY="348.0" onMouseClicked="#click04" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/0_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="two" fitHeight="49.0" fitWidth="53.0" layoutX="93.0" layoutY="250.0" onMouseClicked="#click22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/2-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="six" fitHeight="49.0" fitWidth="53.0" layoutX="283.0" layoutY="450.0" onMouseClicked="#click66" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/6_6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oneTwo" fitHeight="49.0" fitWidth="53.0" layoutX="44.0" layoutY="250.0" onMouseClicked="#click12" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/1_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oneThree" fitHeight="49.0" fitWidth="53.0" layoutX="44.0" layoutY="299.0" onMouseClicked="#click13" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/1_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twoThree" fitHeight="49.0" fitWidth="53.0" layoutX="93.0" layoutY="299.0" onMouseClicked="#click23" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/2_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="three" fitHeight="49.0" fitWidth="53.0" layoutX="146.0" layoutY="299.0" onMouseClicked="#click33" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/3_3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oneFour" fitHeight="49.0" fitWidth="53.0" layoutX="44.0" layoutY="348.0" onMouseClicked="#click14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/1_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twoFour" fitHeight="49.0" fitWidth="53.0" layoutX="93.0" layoutY="348.0" onMouseClicked="#click24" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/2_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="threeFour" fitHeight="49.0" fitWidth="53.0" layoutX="135.0" layoutY="348.0" onMouseClicked="#click34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/3_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="four" fitHeight="49.0" fitWidth="53.0" layoutX="179.0" layoutY="348.0" onMouseClicked="#click44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/4_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oneFive" fitHeight="49.0" fitWidth="53.0" layoutX="49.0" layoutY="393.0" onMouseClicked="#click15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/1_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twoFive" fitHeight="49.0" fitWidth="53.0" layoutX="93.0" layoutY="393.0" onMouseClicked="#click25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/2_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="threeFive" fitHeight="49.0" fitWidth="53.0" layoutX="135.0" layoutY="393.0" onMouseClicked="#click35" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/3_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fourFive" fitHeight="49.0" fitWidth="53.0" layoutX="179.0" layoutY="393.0" onMouseClicked="#click45" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/4_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="five" fitHeight="49.0" fitWidth="53.0" layoutX="222.0" layoutY="393.0" onMouseClicked="#click55" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/5_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oneSix" fitHeight="49.0" fitWidth="53.0" layoutX="49.0" layoutY="442.0" onMouseClicked="#click16" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/1_6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="twoSix" fitHeight="49.0" fitWidth="53.0" layoutX="93.0" layoutY="442.0" onMouseClicked="#click26" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/2_6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="threeSix" fitHeight="49.0" fitWidth="53.0" layoutX="135.0" layoutY="442.0" onMouseClicked="#click36" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/3_6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fourSix" fitHeight="49.0" fitWidth="53.0" layoutX="179.0" layoutY="442.0" onMouseClicked="#click46" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/4_6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fiveSix" fitHeight="49.0" fitWidth="53.0" layoutX="228.0" layoutY="442.0" onMouseClicked="#click56" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/5_6.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="gameField" layoutX="342.0" layoutY="76.0" prefHeight="609.0" prefWidth="642.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fx:id="gamePool1" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <ImageView fx:id="zero" fitHeight="42.0" fitWidth="49.0" layoutX="5.0" layoutY="159.0" onMouseClicked="#click00" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../DicePNG/0_0.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="numberDomino" layoutX="171.0" layoutY="95.0" prefHeight="42.0" prefWidth="49.0" style="-fx-background-color: #2E3348; -fx-text-fill: fafafa; -fx-background-radius: 7;">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.dominos.MainController">
+   <children>
+      <AnchorPane layoutX="-16.0" layoutY="109.0" opacity="0.99" prefHeight="483.0" prefWidth="1016.0" style="-fx-background-color: fafafa;">
+         <children>
+            <Button fx:id="startGame" layoutX="357.0" layoutY="39.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="302.0" style="-fx-background-color: #2E3348; -fx-text-fill: fafafa; -fx-background-radius: 7;" text="Начать игру">
+               <font>
+                  <Font name="Serif Regular" size="33.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="357.0" layoutY="173.0" prefHeight="106.0" prefWidth="302.0" style="-fx-background-color: #2E3348; -fx-background-radius: 7;">
+               <children>
+                  <Label id="number_ dice" fx:id="numberDice" layoutX="136.0" layoutY="30.0" prefHeight="43.0" prefWidth="42.0" textFill="#fafafa">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Button id="minus_ dice" fx:id="minusDice" layoutX="28.0" layoutY="28.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="55.0" style="-fx-background-color: fafafa; -fx-background-radius: 50;" text="-">
+                     <font>
+                        <Font name="Bodoni MT Black" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="plusDice" layoutX="224.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-background-radius: 50;" text="+">
+                     <font>
+                        <Font name="Bodoni MT Black" size="27.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="46.0" layoutY="2.0" prefHeight="23.0" prefWidth="222.0" text="Колличество костяшек" textFill="#fafafa">
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="exit" layoutX="357.0" layoutY="320.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="302.0" style="-fx-background-color: #2E3348; -fx-text-fill: fafafa; -fx-background-radius: 7;" text="Выход">
+               <font>
+                  <Font name="Serif Regular" size="33.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Label layoutX="380.0" layoutY="41.0" prefHeight="43.0" prefWidth="222.0" text="Доминошка" textAlignment="CENTER" textFill="#f2f2f2" textOverrun="CLIP">
+         <font>
+            <Font name="Serif Regular" size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
