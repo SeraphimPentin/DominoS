@@ -33,7 +33,6 @@ open class MainController {
     @FXML
     private lateinit var numberDice: Label
 
-
     @FXML
     private lateinit var plusDice: Button
 
@@ -57,7 +56,6 @@ open class MainController {
             numberDice.text = currentNum
         }
     }
-
     /* функция, вычитающая еденицу, при нажатии на "минус" */
     fun minusD(minus: Button) {
         minus.setOnAction {
@@ -88,7 +86,7 @@ open class MainController {
             stage.show()
         }
 
-        /* кнопка вызода из программы */
+        /* кнопка выхода из программы */
         exit.setOnAction {
             val alert = Alert(Alert.AlertType.CONFIRMATION)
             alert.title = "Подтвердите выход"
